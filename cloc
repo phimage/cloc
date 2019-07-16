@@ -7619,6 +7619,7 @@ sub set_constants {                          # {{{1
     '4D'                 => [
                                 [ 'remove_between_general', '////', '////' ],
                                 [ 'remove_matches'      , '^\s*\/\/'  ],
+                            ],
     'ABAP'               => [   [ 'remove_matches'      , '^\*'    ], ],
     'ActionScript'       => [
                                 [ 'rm_comments_in_strings', '"', '/*', '*/' ],
@@ -9674,6 +9675,7 @@ sub set_constants {                          # {{{1
     'Lua'                          => 4.00,
     'OpenCL'                       => 1.50,
     'Xtend'                        => 2.00,
+    '4D'                           => 1.00,
     # aggregates; value is meaningless
 	'C#/Smalltalk'     			   => 1.00,
 	'D/dtrace'         			   => 1.00,
