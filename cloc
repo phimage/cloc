@@ -6746,6 +6746,7 @@ sub set_constants {                          # {{{1
        ) = @_;
 # 1}}}
 %{$rh_Language_by_Extension} = (             # {{{1
+            '4dm'         => '4D'                  ,
             'abap'        => 'ABAP'                  ,
             'ac'          => 'm4'                    ,
             'ada'         => 'Ada'                   ,
@@ -7615,6 +7616,9 @@ sub set_constants {                          # {{{1
 # 1}}}
 %{$rhaa_Filters_by_Language} = (            # {{{1
     '(unknown)'          => [ ],
+    '4D'                 => [
+                                [ 'remove_between_general', '////', '////' ],
+                                [ 'remove_matches'      , '^\s*\/\/'  ],
     'ABAP'               => [   [ 'remove_matches'      , '^\*'    ], ],
     'ActionScript'       => [
                                 [ 'rm_comments_in_strings', '"', '/*', '*/' ],
